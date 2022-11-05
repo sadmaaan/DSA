@@ -2,8 +2,8 @@ def all_path(r, c, p, maze, path, step):
     if r == len(maze) - 1 and c == len(maze[0]) - 1:
         path[r][c] = step
         for i in path:
-            print('\t'.join(map(str, i)))
-            # print(i)
+            # print('\t'.join(map(str, i)))
+            print(i)
         print(p)
         print("\n")
         return
@@ -14,8 +14,8 @@ def all_path(r, c, p, maze, path, step):
     maze[r][c] = False # backtracking -> making false during recursive call
     path[r][c] = step
 
-    # if r < len(mage) - 1 and c < len(mage) - 1:
-    #     all_path(r + 1, c + 1, p + 'd', mage)
+    if r < len(maze) - 1 and c < len(maze) - 1:
+        all_path(r + 1, c + 1, p + 'd', maze, path, step + 1)
     if r < len(maze) - 1:
         all_path(r + 1, c, p + 'D', maze, path, step + 1)
     if c < len(maze[0]) - 1:
@@ -29,7 +29,7 @@ def all_path(r, c, p, maze, path, step):
     path[r][c] = 0
         
 
-
+# main
 maze = [
     [True, True, True],
     [True, True, True],

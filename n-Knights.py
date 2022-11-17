@@ -56,4 +56,4 @@ def display(base):
 
 n = 4
 board = [[False for x in range(n)] for y in range(n)] 
-print(n_Knights(board, 0, 0, 4))
+print(n_Knights(board, 0, 0, n))

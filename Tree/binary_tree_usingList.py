@@ -64,24 +64,23 @@ class BinaryTree:
             print(self.custom_list[i])
 
     
-        
 
-
-bt = BinaryTree(8)
-bt.insert("Drinks")
-bt.insert("hot")
-bt.insert("cold")
-bt.insert("tea")
-bt.insert("coffee")
-# print(bt.custom_list, bt.last_used_index)
-# print(bt.search("tea"))
-# bt.pre_order()
-# bt.in_order()
-# bt.post_order()
-# bt.level_order()
-print(bt.delete("hot"))
-bt.level_order()
-print(bt.custom_list, bt.last_used_index)
-print(bt.delete_bt())
-print(bt.custom_list, bt.last_used_index)
+if __name__ == '__main__':
+    bt = BinaryTree(8)
+    bt.insert("Drinks")
+    bt.insert("hot")
+    bt.insert("cold")
+    bt.insert("tea")
+    bt.insert("coffee")
+    # print(bt.custom_list, bt.last_used_index)
+    # print(bt.search("tea"))
+    # bt.pre_order()
+    # bt.in_order()
+    # bt.post_order()
+    # bt.level_order()
+    print(bt.delete("hot"))
+    bt.level_order()
+    print(bt.custom_list, bt.last_used_index)
+    print(bt.delete_bt())
+    print(bt.custom_list, bt.last_used_index)
 
